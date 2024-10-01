@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FootMart website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="offcanvas offcanvas-end show" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart" aria-modal="true" role="dialog">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Your cart</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Growers cider</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Fresh grapes</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Heinz tomato ketchup</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+          </li>
+        </ul>
+
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="container-fluid mt-4 border-bottom">
+      <div class="row">
+        <div class="col-lg-3 ">
+          <div class="main_logo">
+            <a href="#"><img src="./images/logo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="search_bar row bg-light py-3 rounded-4">
+            <div class="col-md-4">
+              <select class="form-select  bg-transparent border-0">
+                <option >All Categories</option>
+                <option >Groceries</option>
+                <option >Drinks</option>
+                <option >Chocolates</option>
+              </select>
+            </div>
+            <div class="col-md-7">
+              <form>
+                <input type="text" class="form-control bg-transparent border-0 " placeholder="Search for more than 20,000 products">
+              </form>
+            </div>
+            <div class="col-md-1 d-flex justify-content-center align-items-center">
+              
+                <img src="./images/search-line.svg" width="24" height="24"  alt="">
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+      <div class=" d-flex align-items-center">
+        <div class="text-end me-3 w-25">
+          <span class=" fs-5">For Support?</span>
+        <h5 class="fs-3 fw-bold">+92 315 9130335</h5>
+        </div>
+        
+      
+      <ul class="list-unstyled d-flex gap-3" >
+        <li>
+          <a class="rounded-circle bg-light p-2" href="#"><img src="./images/user-line.svg" width="24" alt=""></a>
+        </li>
+        <li>
+          <a class="rounded-circle bg-light p-2" href="#"><img src="./images/heart-3-line.svg" width="24" alt=""></a>
+        </li>
+        <li>
+          <a class="d-lg-none rounded-circle bg-light p-2" href="#"><img src="./images/heart-3-line.svg" width="24" alt=""></a>
+        </li>
+        <li>
+          <a class=" d-lg-none rounded-circle bg-light p-2" href="#"><img src="./images/heart-3-line.svg" width="24" alt=""></a>
+        </li>
+        
+      </ul>
+      <div class="cart text-end d-none d-lg-block dropdown">
+        <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+          <span class="fs-6 text-muted dropdown-toggle">Your Cart</span>
+          <span class="cart-total fs-5 fw-bold">$1290.00</span>
+        </button>
+      </div>
+    </div>
+    
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+    <div class="container">
+      <div class="row py-3">
+        <div class="d-flex  justify-content-center justify-content-sm-between align-items-center">
+          <nav class="main-menu d-flex navbar navbar-expand-lg">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+              <div class="offcanvas-header justify-content-center">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body">
+            
+                <select class="filter-categories border-0 mb-0 me-5">
+                  <option>Shop by Departments</option>
+                  <option>Groceries</option>
+                  <option>Drinks</option>
+                  <option>Chocolates</option>
+                </select>
+            
+                <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
+                  <li class="nav-item active">
+                    <a href="#women" class="nav-link">Women</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="#men" class="nav-link">Men</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#kids" class="nav-link">Kids</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#accessories" class="nav-link">Accessories</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu" aria-labelledby="pages">
+                      <li><a href="index.html" class="dropdown-item">About Us </a></li>
+                      <li><a href="index.html" class="dropdown-item">Shop </a></li>
+                      <li><a href="index.html" class="dropdown-item">Single Product </a></li>
+                      <li><a href="index.html" class="dropdown-item">Cart </a></li>
+                      <li><a href="index.html" class="dropdown-item">Checkout </a></li>
+                      <li><a href="index.html" class="dropdown-item">Blog </a></li>
+                      <li><a href="index.html" class="dropdown-item">Single Post </a></li>
+                      <li><a href="index.html" class="dropdown-item">Styles </a></li>
+                      <li><a href="index.html" class="dropdown-item">Contact </a></li>
+                      <li><a href="index.html" class="dropdown-item">Thank You </a></li>
+                      <li><a href="index.html" class="dropdown-item">My Account </a></li>
+                      <li><a href="index.html" class="dropdown-item">404 Error </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#brand" class="nav-link">Brand</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#sale" class="nav-link">Sale</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                  </li>
+                </ul>
+              
+              </div>
+
+            </div>
+        </nav></div>
+      </div>
+    </div>
+    <!-- navbar -->
+  </header>
+  <section class="py-3" style="background-image: url('./images/background-pattern.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 bg-info-subtle p-5 rounded-3">
+        <div class="row">
+          <div class="col-md-7">  <div class="natural">
+
+          </div>
+            <div class="categories mb-3 pb-3 text-warning text-capitalize fs-2">100% natural</div>
+            <h3 class="display-5 fw-bold mb-3">Fresh Smoothie & Summer Juice</h3>
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+            <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
+          </div>
+          <div class="col-md-5">
+            <div class="">
+              <img class="img-fluid" src="./images/product-thumb-1.png" alt="">
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        <div class="col-md-6">
+          <div class="banner-ad bg-success-subtle block-2" style="background:url('images/ad-image-1.png') no-repeat;background-position: right bottom">
+            <div class="row banner-content p-5">
+
+              <div class="content-wrapper col-md-7">
+                <div class="categories sale mb-3 pb-3">20% off</div>
+                <h3 class="banner-title">Fruits &amp; Vegetables</h3>
+                <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        </div>
+       
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
